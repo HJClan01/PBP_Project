@@ -12,6 +12,10 @@
 
 }
 
+.d-block {
+    height: 300px;
+
+}
 .carousel {
     height: 100px;
     overflow: hidden;
