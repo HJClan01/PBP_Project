@@ -14,13 +14,24 @@
 
 .d-block {
     height: 300px;
-
 }
 .carousel {
-    height: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar; 
+    height: 200px;
     overflow: hidden;
-    width: 100%;
+    min-width: 100%;
     }
-    .carousel-item {
-    width: 100%;
-    }
+.carousel-item {
+    content: "";
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  
+ }
